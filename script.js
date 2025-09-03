@@ -10,10 +10,10 @@ formSubmit.addEventListener("submit",(e)=>{
 	const year=document.querySelector("#year");
 	let queryParam=[];
 	if(name){
-		queryParam.push("name="+encodeURIComponent(name));
+		queryParam.push("name="+name);
 	}
 	if(year){
-		queryParam.push("year="+encodeURIComponent(year));
+		queryParam.push("year="+year);
 	}
 	if(queryParam.length>0){
 		baseUrl+="?"+queryParam.join("&");
