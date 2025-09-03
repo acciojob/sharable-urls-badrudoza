@@ -5,7 +5,7 @@ const formSubmit=document.querySelector("form");
 formSubmit.addEventListener("submit",(e)=>{
 	e.preventDefault();
 	let baseUrl=urlDisplay.textContent;
-	console.log(baseUrl);
+
 	const name=document.querySelector("#name");
 	const year=document.querySelector("#year");
 	let queryParam=[];
